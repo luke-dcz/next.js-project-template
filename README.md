@@ -1,3 +1,9 @@
+## Custom Next.js project template
+
+To use this template:
+
+`npx create-next-app@latest https://github.com/luke-dcz/next.js-project-template <YOUR_APP_NAME>`
+
 ## Getting Started
 
 First, run the development server:
