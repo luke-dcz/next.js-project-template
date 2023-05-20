@@ -2,7 +2,7 @@
 
 To use this template:
 
-`npx create-next-app@latest https://github.com/luke-dcz/next.js-project-template <YOUR_APP_NAME>`
+`npx create-next-app@latest --example https://github.com/luke-dcz/next.js-project-template <YOUR_APP_NAME>`
 
 ## Getting Started
 
