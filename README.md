@@ -21,6 +21,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the home page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
 TailwindCSS is used for styles - check out the [Tailwind Documentation](https://tailwindcss.com/docs/configuration).
 
 Add new pages in the app folder in their own folder with the page in a page.tsx file. You can also add a pages custom layout in a layout.tsx file.
