@@ -1,6 +1,10 @@
 import './globals.css';
+import { Suspense } from 'react';
 import { Inter } from 'next/font/google'; //update import to chosen font
 import Link from 'next/link';
+import { ErrorBoundary } from 'react-error-boundary';
+import Loading from './loading';
+import NotFound from './not-found';
 
 const inter = Inter({ subsets: ['latin'] }); //Change this line to your chosen font
 
@@ -18,14 +22,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* import your navbar/footer∂ layout component here (replace the div too) */}
+        {/* import your navbar/footer layout component here (replace the div too) */}
         <div className="flex gap-x-2">
           <Link href={'/'} className="">
             Home
           </Link>
           <Link href={'/other-page'}>Other page</Link>
         </div>
-        <div className={inter.className}>{children}</div>
+        <Suspense fallback={<Loading />}>
+          <ErrorBoundary fallback={<NotFound />}>
+            <div className={inter.className}>{children}</div>
+          </ErrorBoundary>
+        </Suspense>
         {/* import your footer layout component here */}
       </body>
     </html>
