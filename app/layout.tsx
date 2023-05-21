@@ -2,9 +2,9 @@ import './globals.css';
 import { Suspense } from 'react';
 import { Inter } from 'next/font/google'; //update import to chosen font
 import Link from 'next/link';
-import { ErrorBoundary } from 'react-error-boundary';
 import Loading from './loading';
 import NotFound from './not-found';
+import ErrorBoundary from '../components/error-boundary';
 
 const inter = Inter({ subsets: ['latin'] }); //Change this line to your chosen font
 
